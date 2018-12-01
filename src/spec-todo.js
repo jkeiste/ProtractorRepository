@@ -12,8 +12,7 @@ describe('Protractor Demo App', function() {
     element(by.model("first")).sendKeys("3");
     element(by.model("second")).sendKeys("5");
     element(by.id("gobutton")).click();
-    element(by.css("h2[class='ng-binding']")).getText().then(function(text) {
-      console.log(text);
-    });
+    //Jasmine framework automatically waits for promise to be resolved with "expect"
+    expect(element(by.css("h2[class='ng-binding']")).getText()).toBe("8");
   });
 });
