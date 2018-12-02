@@ -23,11 +23,11 @@ describe('Actions demo',function() {
                             browser.switchTo().window(handles[0]);
                             browser.getTitle().then(function(title) {
                                 console.log("Parent Page: " + title);
-                            });
-                        });
-                    });
-                });
-            });
-        });
-    });
-});
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    })
+})

@@ -14,5 +14,5 @@ describe('Protractor Demo App', function() {
     element(by.id("gobutton")).click();
     //Jasmine framework automatically waits for promise to be resolved with "expect"
     expect(element(by.css("h2[class='ng-binding']")).getText()).toBe("8");
-  });
-});
+  })
+})
