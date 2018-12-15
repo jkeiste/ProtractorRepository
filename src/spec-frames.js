@@ -1,3 +1,5 @@
+//This test demonstrates how to interact with frames on non-angular websites
+
 describe('Protractor Alert steps', function() {  
     it('Open NonAngular js website Alerts', function() {
         browser.waitForAngularEnabled(false);
